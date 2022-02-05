@@ -244,7 +244,7 @@ class Post extends Component {
         </div>
 
         <div className="post-image">
-          {this.state.loadedImg ? null : (
+          {/* {this.state.loadedImg ? null : (
             <Segment loading>
               <Image src={`${post.photo}`} />
             </Segment>
@@ -256,8 +256,14 @@ class Post extends Component {
             src={`${post.photo}`}
             alt=""
           />
+
+
           {ribbon}
-          {renderDivs}
+          {renderDivs} */}
+                       <iframe src="https://console.echoar.xyz/webar?key=restless-bonus-8397&entry=beb4d98e-c8f4-41aa-baaf-797206038a2d" style={{position: "relative", width: "100%", height: "95vh"}} title="echoAR WebAR iframe element">
+
+
+</iframe>
         </div>
         {post.description ? (
           <div className="post-description">
