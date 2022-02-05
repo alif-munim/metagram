@@ -246,14 +246,14 @@ class Post extends Component {
         <div className="post-image">
           {this.state.loadedImg ? null : (
             <Segment loading>
-              <Image src={`/images/post-images/thumbnail/${post.photo}`} />
+              <Image src={`${post.photo}`} />
             </Segment>
           )}
           <img
             onClick={this.handleToggleTags}
             onLoad={() => this.setState({ loadedImg: true })}
             style={this.state.loadedImg ? {} : { display: "none" }}
-            src={`/images/post-images/${post.photo}`}
+            src={`${post.photo}`}
             alt=""
           />
           {ribbon}
