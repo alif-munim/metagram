@@ -1,6 +1,7 @@
 node_modules/
 variables.env
 *.log
+.DS_Store
 
 client/node_modules
 client/build
