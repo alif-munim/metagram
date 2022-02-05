@@ -36,7 +36,7 @@ function postLikeNotification({ _id, createdAt, sender, post }) {
           <Link to={`/p/${post[0]._id}`}>
             <Image
               rounded
-              src={`/images/post-images/thumbnail/${post[0].photo}`}
+              src={`${post[0].photo}`}
             />
           </Link>
         </Feed.Extra>
