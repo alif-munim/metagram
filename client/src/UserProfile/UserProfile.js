@@ -103,7 +103,7 @@ class UserProfile extends Component {
                   className="gallery-image"
                   alt=""
                 /> */}
-                   <iframe src="https://console.echoar.xyz/webar?key=restless-bonus-8397&entry=beb4d98e-c8f4-41aa-baaf-797206038a2d" style={{position: "relative", width: "100%", height: "95vh"}} title="echoAR WebAR iframe element">
+                   <iframe src={`${post.photo}`}style={{position: "relative", width: "100%", height: "95vh"}} title="echoAR WebAR iframe element">
 
 
                 </iframe>
