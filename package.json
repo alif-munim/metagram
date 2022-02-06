@@ -7,7 +7,8 @@
     "server": "nodemon ./bin/www",
     "client": "npm start --prefix client",
     "test": "mocha --recursive --exit --timeout 10000",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "@hapi/joi": "^16.1.8",
