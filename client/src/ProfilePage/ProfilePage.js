@@ -74,11 +74,8 @@ class ProfilePage extends Component {
           size="small"
           trigger={
             <div className="gallery-item">
-              <img
-                src={`${post.photo}`}
-                className="gallery-image"
-                alt=""
-              />
+                                <iframe src={`${post.photo}`}style={{position: "relative", width: "100%", height: "95vh"}} title="echoAR WebAR iframe element">
+</iframe>
 
               <div className="gallery-item-info">
                 <ul>
