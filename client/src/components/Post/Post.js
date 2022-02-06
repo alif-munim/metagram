@@ -166,7 +166,7 @@ class Post extends Component {
           <div className="post-label">
             <div className="label-image">
               <img
-                src={`/images/profile-picture/100x100/${post.author[0].profilePicture}`}
+                src={`${post.author[0].profilePicture}`}
                 alt=""
               />
             </div>

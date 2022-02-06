@@ -164,7 +164,7 @@ class UserProfile extends Component {
               <div className="profile">
                 <div className="profile-image">
                   <img
-                    src={`/images/profile-picture/100x100/${userProfileData.data.profilePicture}`}
+                    src={`${userProfileData.data.profilePicture}`}
                     alt=""
                   />
                 </div>

@@ -49,7 +49,7 @@ function commentLikeNotification({ _id, createdAt, sender, comment, post }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -79,7 +79,7 @@ function likeCommentReplyNotification({ _id, createdAt, sender, reply, post }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -108,7 +108,7 @@ function postTaggedNotification({ _id, createdAt, sender, post }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -136,7 +136,7 @@ function commentTaggedNotification({ _id, createdAt, sender, post }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -165,7 +165,7 @@ function addCommentNotification({ _id, createdAt, sender, comment, post }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -194,7 +194,7 @@ function followNotification({ _id, createdAt, sender }) {
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>
@@ -220,7 +220,7 @@ function commentReplyNotification({
   return (
     <Feed.Event key={_id}>
       <Feed.Label
-        image={`/images/profile-picture/100x100/${sender[0].profilePicture}`}
+        image={`${sender[0].profilePicture}`}
       />
       <Feed.Content>
         <Feed.Summary>

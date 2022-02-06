@@ -11,7 +11,7 @@ export default function FollowingFollowerList({
       <List.Content floated="right">
         <FollowButton userId={_id}></FollowButton>
       </List.Content>
-      <Image avatar src={`/images/profile-picture/100x100/${profilePicture}`} />
+      <Image avatar src={`${profilePicture}`} />
       <List.Content as={Link} to={"/" + username} style={{ color: "#3d3d3d" }}>
         {username}
       </List.Content>

@@ -28,7 +28,7 @@ function renderSuggestion({ firstName, lastName, username, profilePicture }) {
   return (
     <Link to={"/" + username}>
       <span className={"suggestion-content " + username}>
-        <img alt="" src={"/images/profile-picture/100x100/" + profilePicture} />
+        <img alt="" src={profilePicture} />
         <span className="autosuggestion-name">
           {username}
           <p>{`${firstName} ${lastName}`}</p>
@@ -46,7 +46,7 @@ function renderSuggestionForTags({
 }) {
   return (
     <span className={"suggestion-content " + username}>
-      <img alt="" src={"/images/profile-picture/100x100/" + profilePicture} />
+      <img alt="" src={ profilePicture} />
       <span className="autosuggestion-name">
         {username}
         <p>{`${firstName} ${lastName}`}</p>

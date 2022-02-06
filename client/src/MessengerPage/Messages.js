@@ -31,7 +31,7 @@ const linkifyOptions = {
 
 function ShowImage({ show, image }) {
   return show ? (
-    <img src={`/images/profile-picture/100x100/${image}`} alt="" />
+    <img src={`${image}`} alt="" />
   ) : (
     <div></div>
   );
