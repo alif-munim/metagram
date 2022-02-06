@@ -141,9 +141,19 @@ app.use((err, req, res, next) => {
 });
 
 var port = process.env.PORT || 3000;
-app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
+
+// ... other imports 
+const path = require("path")
+
+// ... other app.use middleware 
+app.use(express.static(path.join(__dirname, "client", "build")))
+
+// ...
+// Right before your app.listen(), add this:
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
+
 app.listen(port, function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 });

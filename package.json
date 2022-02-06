@@ -37,5 +37,6 @@
     "mocha": "^7.1.2",
     "nodemon": "^2.0.15",
     "supertest": "^4.0.2"
-  }
+  },
+  "proxy": "http://localhost:3000"
 }
