@@ -4,6 +4,7 @@ export const socketService = {
   connect,
 };
 //window.location.hostname
+//heroku launch
 function connect() {
   return new Promise((resolve, reject) => {
     const socket = io(window.location.hostname, {
