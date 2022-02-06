@@ -142,9 +142,6 @@ app.use((err, req, res, next) => {
 
 var port = process.env.PORT || 3000;
 
-// ... other imports 
-const path = require("path")
-
 // ... other app.use middleware 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
