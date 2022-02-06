@@ -50,11 +50,16 @@ class HashtagPage extends Component {
       return (
         <Link to={"/p/" + post._id} key={post._id}>
           <div className="gallery-item">
-            <img
+            {/* <img
               src={`${post.photo}`}
               className="gallery-image"
               alt=""
-            />
+            /> */}
+
+<iframe src={`${post.photo}`}style={{position: "relative", width: "100%", height: "95vh"}} title="echoAR WebAR iframe element">
+
+
+</iframe>
 
             <div className="gallery-item-info">
               <ul>
