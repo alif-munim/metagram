@@ -102,9 +102,9 @@ if (process.env.NODE_ENV === "production") {
 } else {
   app.use(logger("dev"));
 }
-app.use(express.static("public"));
+app.use(express.static("build"));
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "public", "index.html"));
+  res.sendFile(path.resolve(__dirname, "build", "index.html"));
 });
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
