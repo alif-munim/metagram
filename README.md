@@ -67,7 +67,7 @@ We are proud of being able to find a method in which we can host COLMAP on Googl
 We learned a great deal about hosting COLMAP on Google Cloud. We were also able to learn how to create an AR and how to use Echo3D as we have never previously used it before, and how to integrate it all into a functional social networking web app!
 
 ## Next Steps for Metagram
-[ ] Improving the web interface and overall user experience
+[ ] Improving the web interface and overall user experience  
 [ ] Scan and upload 3D models in a more efficient manner
 
 ## Research
