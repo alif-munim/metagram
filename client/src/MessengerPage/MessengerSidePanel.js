@@ -68,7 +68,7 @@ class MessengerSidePanel extends Component {
               className={`contact-status ${member[0].activityStatus}`}
             ></span>
             <img
-              src={`/images/profile-picture/100x100/${member[0].profilePicture}`}
+              src={`${member[0].profilePicture}`}
               alt=""
             />
             <div className="meta">
@@ -88,7 +88,7 @@ class MessengerSidePanel extends Component {
           <div className="wrap">
             <img
               id="profile-img"
-              src={`/images/profile-picture/100x100/${user.data.profilePicture}`}
+              src={`${user.data.profilePicture}`}
               className="online"
               alt=""
             />

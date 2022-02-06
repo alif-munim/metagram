@@ -16,7 +16,7 @@ function trigger(image, name) {
       <Image
         size="mini"
         avatar
-        src={"/images/profile-picture/100x100/" + image}
+        src={image}
       />{" "}
       {name}
     </span>
